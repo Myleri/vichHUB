@@ -1,0 +1,236 @@
+*{
+	box-sizing: border-box; 
+	/* This makes the widths of elements more consistent
+		Full details here https://css-tricks.com/box-sizing/ */
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+header{
+	background-color: white;
+	color: white; /* more readable on an orange background */
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	z-index: 99;
+}
+
+nav a, nav h3{
+	float: left;
+	line-height: auto;
+	margin-left: 50%;
+	text-decoration: none;
+	color: white;
+	overflow: hidden;
+
+}
+
+nav a:hover{
+	text-decoration: none;
+	color: white; /* Hover styles to let people know they can click it */
+}
+
+.REVIEWwrapNAV {
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(70%, -50%);
+}
+
+.SIGNwrapNAV {
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  transform: translate(80%, -50%);
+}
+
+
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #1d753b;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: black;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #1d753b;
+  background: #1d753b;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 60%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapIMG {
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.COURSEwrapNAV {
+  width: 15%;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(20%, 75%);
+}
+
+.LECTURERSwrapNAV {
+  width: 15%;
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  transform: translate(35%, 75%);
+}
+
+.FLATSwrapNAV {
+  width: 15%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(50%, 75%);
+}
+
+
+
+body{
+	margin: 0px; /* Often browsers have a 5px margin by deafult*/
+	font-family: sans-serif;
+	overflow: scroll-y;
+	background-color: white;
+}
+
+section{
+	max-width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: "shlop";
+  src: url("shlop.ttf") format('truetype');
+}
+
+/*.centerIMG {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;	
+	background-color:;
+	position: relative;
+	align-items: center;
+  	justify-content: center;
+
+}*/
+
+/*.logo{
+
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;	
+	background-color:;
+	position: relative;
+	align-items: center;
+  	justify-content: center;
+
+
+}*/
+
+
+
+
+/*.logo{
+	max-width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	background-color:;
+	position: relative;
+}*/
+
+
+
+.title {
+	text-align: center;
+	color: white;
+}
+
+/* Simple grid */
+.g-row{
+	width: 100%;
+	overflow: scroll;
+}
+
+.g-row img{
+	width: 100%; /*This makes all images in grids to be the size of their cell */
+}
+
+.g-50{
+	width: 50%;
+	float: left;
+}
+
+.g-30{
+	width: 30%;
+	float: left;
+}
+
+.g-70{
+	width: 70%;
+	float: left;
+}
+
+.show{
+	border: 1px solid blue;
+	padding: 2px;
+}
+
+.padded{
+	padding: 20px; /* I add this to cells to add a little padding*/
+}
